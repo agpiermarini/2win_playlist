@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 25%;
+  grid-template-rows: 50% 50%;
+  height: 150px;
+  width: 100%;
+}
+
+#shares {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#playlists {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#videos {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#username {
+  grid-column: 6;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+#username-icon {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#username-text {
+  color: blue;
+  text-align: center;
+}
+
+#username-dropdown {
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  grid-column: 6;
+  grid-row: 2;
+  align-self: center;
+  justify-content: flex-start;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+  background-color: lightgrey;
+  padding: 20px 20px 20px 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.user_cards {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 300px;
+  min-height: 300px;
+  border: solid 1px;
+  margin: 20px 5px 20px 5px;
+}
+
+.card_header {
+  background-image: url("/Users/andrew/turing/2module/static_challenges/2win_playlist/default-card-header.jpg");
+  background-size: contain;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  min-height: 100px;
+  min-width: 200px;
+  background-color: blue;
+}
+
+.card_arrow {
+  grid-column: 1;
+  grid-row: 1/3;
+  text-align: center;
+}
+
+.card_views {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: right;
+  position: center;
+}
+
+.card_view_numbers {
+  grid-column: 3;
+  grid-row: 3;
+  text-align: right;
+}
