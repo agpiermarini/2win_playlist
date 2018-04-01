@@ -1,35 +1,49 @@
+html body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
   background-color: grey;
-  width: 100vw;
-  height: 100vh;
 }
 
 #nav {
   display: grid;
   grid-template-columns: 15% 15% 15% 15% 15% 25%;
   grid-template-rows: 50% 50%;
+  padding: 40px 40px 40px 40px;
   height: 150px;
   width: 100%;
 }
 
 #shares {
+  color: white;
+  font-size: 20px;
   grid-column: 1;
   grid-row: 2;
 }
 
 #playlists {
+  color: white;
+  font-size: 20px;
   grid-column: 2;
   grid-row: 2;
 }
 
 #videos {
-  grid-column: 3;
+  color: white;
+  font-size: 20px;
+  grid-column: 3/5;
   grid-row: 2;
 }
 
 #username {
+  color: white;
+  font-size: 20px;
   grid-column: 6;
   grid-row: 1;
   display: flex;
@@ -38,16 +52,21 @@
 }
 
 #username-icon {
+  color: white;
+  font-size: 30px;
   justify-content: flex-end;
   align-items: center;
 }
 
 #username-text {
+  font-size: 20px;
   color: blue;
   text-align: center;
 }
 
 #username-dropdown {
+  color: white;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -56,8 +75,7 @@
   display: flex;
   grid-column: 6;
   grid-row: 2;
-  align-self: center;
-  justify-content: flex-start;
+  max-width: 300px;
 }
 
 #cards {
